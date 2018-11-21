@@ -10,6 +10,7 @@ from torchmoji.model_def import torchmoji_feature_encoding
 from torchmoji.global_variables import PRETRAINED_PATH, VOCAB_PATH
 
 TEST_SENTENCES = ['I love mom\'s cooking',
+                  'I love him',
                   'I love how you never reply back..',
                   'I love cruising with my homies',
                   'I love messing with yo mind!!',
@@ -36,7 +37,7 @@ encoding = model(tokenized)
 import numpy as np
 
 a = np.asarray(encoding[0, :])
-b = np.asarray(encoding[5, :])
+b = np.asarray(encoding[-1, :])
 c = np.asarray(encoding[1, :])
 
 
