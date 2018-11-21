@@ -33,20 +33,29 @@ print(model)
 print('Encoding texts..')
 encoding = model(tokenized)
 
-print('First 20 dimensions for sentence: {}'.format(TEST_SENTENCES[0]))
-print(encoding[0, :20])
+import numpy as np
+
+a = np.asarray(encoding[0, :])
+b = np.asarray(encoding[5, :])
+
+print(a.shape)
+print(np.sum(a-b))
 
 
-print('First 20 dimensions for sentence: {}'.format(TEST_SENTENCES[1]))
-print(encoding[0, :20])
-
-
-print('First 20 dimensions for sentence: {}'.format(TEST_SENTENCES[5]))
-print(encoding[0, :20])
-
-
-print('First 20 dimensions for sentence: {}'.format(TEST_SENTENCES[6]))
-print(encoding[0, :20])
+# print('First 20 dimensions for sentence: {}'.format(TEST_SENTENCES[0]))
+# print(encoding[0, :20])
+#
+#
+# print('First 20 dimensions for sentence: {}'.format(TEST_SENTENCES[1]))
+# print(encoding[0, :20])
+#
+#
+# print('First 20 dimensions for sentence: {}'.format(TEST_SENTENCES[5]))
+# print(encoding[0, :20])
+#
+#
+# print('First 20 dimensions for sentence: {}'.format(TEST_SENTENCES[6]))
+# print(encoding[0, :20])
 
 # Now you could visualize the encodings to see differences,
 # run a logistic regression classifier on top,
