@@ -41,11 +41,11 @@ print('First 20 dimensions for sentence: {}'.format(TEST_SENTENCES[1]))
 print(encoding[0, :20])
 
 
-print('First 20 dimensions for sentence: {}'.format(TEST_SENTENCES[2]))
+print('First 20 dimensions for sentence: {}'.format(TEST_SENTENCES[5]))
 print(encoding[0, :20])
 
 
-print('First 20 dimensions for sentence: {}'.format(TEST_SENTENCES[3]))
+print('First 20 dimensions for sentence: {}'.format(TEST_SENTENCES[6]))
 print(encoding[0, :20])
 
 # Now you could visualize the encodings to see differences,
