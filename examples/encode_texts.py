@@ -11,7 +11,7 @@ from torchmoji.global_variables import PRETRAINED_PATH, VOCAB_PATH
 
 TEST_SENTENCES = ['I love mom\'s cooking',
                   'I love him',
-                  'I love mom',
+                  'I love mom\'s food',
                   'I love how you never reply back..',
                   'I love cruising with my homies',
                   'I love messing with yo mind!!',
