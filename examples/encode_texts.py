@@ -37,9 +37,14 @@ import numpy as np
 
 a = np.asarray(encoding[0, :])
 b = np.asarray(encoding[5, :])
+c = np.asarray(encoding[1, :])
+
+
+d1 = np.linalg.norm((a-b), ord=2)
+d2 = np.linalg.norm((a-c), ord=2)
 
 print(a.shape)
-print(np.sum(a-b))
+print(d1, d2)
 
 
 # print('First 20 dimensions for sentence: {}'.format(TEST_SENTENCES[0]))
