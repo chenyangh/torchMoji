@@ -22,11 +22,11 @@ from torch.nn.utils import clip_grad_norm
 
 from sklearn.metrics import f1_score
 
-from torchmoji.global_variables import (FINETUNING_METHODS,
+from torchMoji.torchmoji.global_variables import (FINETUNING_METHODS,
                                                FINETUNING_METRICS,
                                                WEIGHTS_DIR)
-from torchmoji.tokenizer import tokenize
-from torchmoji.sentence_tokenizer import SentenceTokenizer
+from torchMoji.torchmoji.tokenizer import tokenize
+from torchMoji.torchmoji.sentence_tokenizer import SentenceTokenizer
 
 try:
     unicode

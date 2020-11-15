@@ -12,10 +12,10 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 
-from torchmoji.global_variables import (
+from torchMoji.torchmoji.global_variables import (
     FINETUNING_METHODS,
     WEIGHTS_DIR)
-from torchmoji.finetuning import (
+from torchMoji.torchmoji.finetuning import (
     freeze_layers,
     get_data_loader,
     fit_model,

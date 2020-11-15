@@ -11,9 +11,9 @@ import torch.nn as nn
 from torch.autograd import Variable
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence, PackedSequence
 
-from torchmoji.lstm import LSTMHardSigmoid
-from torchmoji.attlayer import Attention
-from torchmoji.global_variables import NB_TOKENS, NB_EMOJI_CLASSES
+from torchMoji.torchmoji.lstm import LSTMHardSigmoid
+from torchMoji.torchmoji.attlayer import Attention
+from torchMoji.torchmoji.global_variables import NB_TOKENS, NB_EMOJI_CLASSES
 
 
 def torchmoji_feature_encoding(weight_path, return_attention=False):

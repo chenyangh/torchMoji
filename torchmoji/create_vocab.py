@@ -8,9 +8,9 @@ from copy import deepcopy
 from collections import defaultdict, OrderedDict
 import numpy as np
 
-from torchmoji.filter_utils import is_special_token
-from torchmoji.word_generator import WordGenerator
-from torchmoji.global_variables import SPECIAL_TOKENS, VOCAB_PATH
+from torchMoji.torchmoji.filter_utils import is_special_token
+from torchMoji.torchmoji.word_generator import WordGenerator
+from torchMoji.torchmoji.global_variables import SPECIAL_TOKENS, VOCAB_PATH
 
 class VocabBuilder():
     """ Create vocabulary with words extracted from sentences as fed from a

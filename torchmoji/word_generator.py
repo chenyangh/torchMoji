@@ -12,8 +12,8 @@ import unicodedata
 import numpy as np
 from text_unidecode import unidecode
 
-from torchmoji.tokenizer import RE_MENTION, tokenize
-from torchmoji.filter_utils import (convert_linebreaks,
+from torchMoji.torchmoji.tokenizer import RE_MENTION, tokenize
+from torchMoji.torchmoji.filter_utils import (convert_linebreaks,
                                            convert_nonbreaking_space,
                                            correct_length,
                                            extract_emojis,
